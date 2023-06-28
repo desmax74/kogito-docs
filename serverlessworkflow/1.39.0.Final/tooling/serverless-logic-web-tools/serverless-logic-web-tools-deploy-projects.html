@@ -6,7 +6,7 @@
     <title>Deploying your Kogito Serverless Workflow projects using Serverless Logic Web Tools :: Kogito Serverless Workflow Guides</title>
     <meta name="description" content="Serverless Logic Web Tools deploying your projects">
     <meta name="keywords" content="kogito, workflow, serverless, editor, web, tools, settings, openshift, deploy, project">
-    <meta name="generator" content="Antora 3.0.3">
+    <meta name="generator" content="Antora 3.1.4">
     <link rel="stylesheet" href="../../../../_/css/site.css">
 <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
 
@@ -344,12 +344,18 @@
   </div>
   <ul class="components">
     <li class="component is-current">
-      <a class="title" href="../../index.html">Kogito Serverless Workflow Guides</a>
+      <a class="title" href="../../../latest/index.html">Kogito Serverless Workflow Guides</a>
       <ul class="versions">
         <li class="version">
           <a href="../../../main/index.html">snapshot</a>
         </li>
-        <li class="version is-current is-latest">
+        <li class="version is-latest">
+          <a href="../../../latest/index.html">1.40</a>
+        </li>
+        <li class="version">
+          <a href="../../../1.40.0-SNAPSHOT/index.html">1.40-RC</a>
+        </li>
+        <li class="version is-current">
           <a href="../../index.html">1.39</a>
         </li>
         <li class="version">
@@ -407,7 +413,7 @@
 <main class="article">
 <div class="toolbar" role="navigation">
 <button class="nav-toggle"></button>
-  <a href="../../index.html" class="home-link"></a>
+  <a href="../../../latest/index.html" class="home-link"></a>
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="../../index.html">Kogito Serverless Workflow Guides</a></li>
@@ -420,6 +426,8 @@
   <button class="version-menu-toggle" title="Show other versions of page">1.39</button>
   <div class="version-menu">
     <a class="version" href="../../../main/tooling/serverless-logic-web-tools/serverless-logic-web-tools-deploy-projects.html">snapshot</a>
+    <a class="version" href="../../../latest/tooling/serverless-logic-web-tools/serverless-logic-web-tools-deploy-projects.html">1.40</a>
+    <a class="version" href="../../../1.40.0-SNAPSHOT/tooling/serverless-logic-web-tools/serverless-logic-web-tools-deploy-projects.html">1.40-RC</a>
     <a class="version is-current" href="serverless-logic-web-tools-deploy-projects.html">1.39</a>
     <a class="version" href="../../../1.38.0.Final/tooling/serverless-logic-web-tools/serverless-logic-web-tools-deploy-projects.html">1.38</a>
     <a class="version" href="../../../1.37.0.Final/tooling/serverless-logic-web-tools/serverless-logic-web-tools-deploy-projects.html">1.37</a>
@@ -449,7 +457,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>You can deploy your Kogito Serverless Workflow projects to an OpenShift instance using the OpenShift integration. The OpenShift integration allows you test your implementations in a live environment.</p>
+<p>You can deploy your Kogito Serverless Workflow projects to an OpenShift instance using the OpenShift integration. The OpenShift integration allows you to test your implementations in a live environment.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -492,7 +500,7 @@
 <div class="openblock">
 <div class="content">
 <div class="paragraph">
-<p>You can use the <a href="https://github.com/kiegroup/kogito-examples/tree/main/serverless-workflow-examples/serverless-workflow-greeting-quarkus"><code>serverless-workflow-greeting-quarkus</code></a> example application, which does not contain external dependencies, and is easy to test and comprehend.</p>
+<p>You can use the <a href="https://github.com/kiegroup/kogito-examples/tree/main/serverless-workflow-examples/serverless-workflow-greeting-quarkus"><code>serverless-workflow-greeting-quarkus</code></a> example application, which does not contain external dependencies and is easy to test and comprehend.</p>
 </div>
 <div class="paragraph">
 <p>The <code>serverless-workflow-greeting-quarkus</code> example application contains a single operation state with one action, sending request to the <code>greeting</code> function. In the example application, the workflow data is assumed to be the name of the person to greet, and the result is the greeting for the person. The result is added to the state data, which later becomes the workflow data output.</p>
@@ -527,9 +535,6 @@
 </li>
 <li>
 <p><strong>Upload OpenAPI spec to Service Registry</strong>: After a workflow is deployed, an OpenAPI specification is available in the deployed service. When you check this option, the Serverless Logic Web Tools fetches the OpenAPI specification, and when ready, the OpenAPI specification is uploaded to your configured service registry. To use this option, you need to configure your service account and service registry on the <strong>Settings</strong> page. To configure the service account and service registry, see <a href="serverless-logic-web-tools-redhat-application-services-integration.html" class="xref page">Integrating with Red Hat OpenShift Application and Data Services</a>.</p>
-</li>
-<li>
-<p><strong>Attach KafkaSource to the deployment</strong>: You must check this option if your workflow contains an Apache Kafka event dependency. To use this option, you need to configure your service account and streams for Apache Kafka on the <strong>Settings</strong> page. To configure your service account and Apache Kafka streams, see <a href="serverless-logic-web-tools-redhat-application-services-integration.html" class="xref page">Integrating with Red Hat OpenShift Application and Data Services</a>.</p>
 </li>
 </ul>
 </div>

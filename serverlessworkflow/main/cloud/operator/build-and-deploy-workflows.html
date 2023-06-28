@@ -6,7 +6,7 @@
     <title>Building and Deploying Workflows with the Operator :: Kogito Serverless Workflow Guides</title>
     <meta name="description" content="Build and deploy with Kogito Serverless Workflow Operator">
     <meta name="keywords" content="kogito, workflow, serverless, operator, kubernetes, minikube, openshift, containers">
-    <meta name="generator" content="Antora 3.0.3">
+    <meta name="generator" content="Antora 3.1.4">
     <link rel="stylesheet" href="../../../../_/css/site.css">
 <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
 
@@ -70,40 +70,43 @@
     <span class="nav-text">Getting Started</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../getting-started/create-your-first-workflow-service.html">Creating your first workflow service</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../getting-started/cncf-serverless-workflow-specification-support.html">CNCF Serverless Workflow specification</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../getting-started/getting-familiar-with-our-tooling.html">Getting familiar with tooling</a>
+    <a class="nav-link" href="../../getting-started/create-your-first-workflow-service.html">Creating a Quarkus Workflow Project</a>
   </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <span class="nav-text">Core</span>
+    <span class="nav-text">Core Concepts</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../core/understanding-jq-expressions.html">jq expressions</a>
+    <a class="nav-link" href="../../core/cncf-serverless-workflow-specification-support.html">Serverless Workflow Specification</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../core/handling-events-on-workflows.html">Events</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../core/working-with-callbacks.html">Callbacks</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../core/understanding-jq-expressions.html">jq Expressions</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../../core/understanding-workflow-error-handling.html">Error handling</a>
   </li>
   <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../core/configuration-properties.html">Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../core/defining-an-input-schema-for-workflows.html">Input Schema</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../core/custom-functions-support.html">Custom Functions</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../core/timeouts-support.html">Timeouts</a>
+  </li>
+  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../../core/working-with-parallelism.html">Parallelism</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../core/configuration-properties.html">Configuration properties</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../core/defining-an-input-schema-for-workflows.html">Input schema definition</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../core/custom-functions-support.html">Custom functions for your workflow service</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../core/timeouts-support.html">Timeouts Support</a>
   </li>
 </ul>
   </li>
@@ -154,9 +157,6 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../tooling/serverless-logic-web-tools/serverless-logic-web-tools-deploy-projects.html">Deploying your workflow projects using Serverless Logic Web Tools</a>
   </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../tooling/serverless-logic-web-tools/serverless-logic-web-tools-enable-kogito-swf-visualization.html">Enabling Visualization in Serverless Logic Web Tools</a>
-  </li>
 </ul>
   </li>
 </ul>
@@ -166,40 +166,43 @@
     <span class="nav-text">Service Orchestration</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../service-orchestration/orchestration-of-openapi-based-services.html">Orchestrating the OpenAPI services</a>
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../service-orchestration/orchestration-of-openapi-based-services.html">OpenAPI</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../service-orchestration/configuring-openapi-services-endpoints.html">Advanced Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../service-orchestration/working-with-openapi-callbacks.html">Callbacks</a>
+  </li>
+</ul>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../service-orchestration/configuring-openapi-services-endpoints.html">Configuring the OpenAPI services endpoints</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../service-orchestration/orchestration-of-asyncapi-based-services.html">Orchestrating the AsyncAPI services</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../service-orchestration/orchestration-of-grpc-services.html">Orchestration of gRPC based services</a>
+    <a class="nav-link" href="../../service-orchestration/orchestration-of-grpc-services.html">gRPC</a>
   </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <span class="nav-text">Eventing</span>
+    <span class="nav-text">Event Orchestration</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../eventing/handling-events-on-workflows.html">Event State</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../eventing/consume-producing-events-with-kafka.html">Consuming and producing events using Apache Kafka</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../eventing/consume-produce-events-with-knative-eventing.html">Consuming and producing events on Knative Eventing</a>
+    <a class="nav-link" href="../../eventing/orchestration-of-asyncapi-based-services.html">AsyncAPI</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../../eventing/event-correlation-with-workflows.html">Event Correlation</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../eventing/working-with-callbacks.html">Callback State</a>
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Quarkus</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../eventing/consume-producing-events-with-kafka.html">Apache Kafka</a>
   </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../eventing/working-with-openapi-callbacks.html">OpenAPI Callback</a>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../eventing/consume-produce-events-with-knative-eventing.html">Knative Eventing</a>
+  </li>
+</ul>
   </li>
 </ul>
   </li>
@@ -208,28 +211,37 @@
     <span class="nav-text">Security</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../security/authention-support-for-openapi-services.html">Authentication for OpenAPI services</a>
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Client Authentication</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../security/authention-support-for-openapi-services.html">OpenAPI Authentication</a>
   </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../security/orchestrating-third-party-services-with-oauth2.html">Orchestration of third-party services using OAuth 2.0 authentication</a>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../security/orchestrating-third-party-services-with-oauth2.html">OpenAPI OAuth2</a>
+  </li>
+</ul>
   </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <span class="nav-text">Testing and Troubleshooting</span>
+    <span class="nav-text">Executing, Testing and Troubleshooting</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../testing-and-troubleshooting/mocking-http-cloudevents-with-wiremock.html">Mocking HTTP CloudEvents sink using WireMock</a>
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Quarkus</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../testing-and-troubleshooting/mocking-http-cloudevents-with-wiremock.html">Mocking HTTP CloudEvents</a>
   </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../testing-and-troubleshooting/mocking-openapi-services-with-wiremock.html">Mocking OpenAPI services using WireMock</a>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../testing-and-troubleshooting/mocking-openapi-services-with-wiremock.html">Mocking OpenAPI Services</a>
   </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../testing-and-troubleshooting/basic-integration-tests-with-restassured.html">Testing using REST Assured</a>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../testing-and-troubleshooting/basic-integration-tests-with-restassured.html">Testing with REST Assured</a>
   </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../testing-and-troubleshooting/integration-tests-with-postgresql.html">Integration tests using PostgreSQL</a>
+</ul>
   </li>
 </ul>
   </li>
@@ -238,10 +250,19 @@
     <span class="nav-text">Persistence</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../persistence/persistence-with-postgresql.html">Running a workflow service using PostgreSQL</a>
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Quarkus</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../persistence/persistence-with-postgresql.html">PostgreSQL Configuration</a>
   </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../persistence/postgresql-flyway-migration.html">Migrate your PostgreSQL database</a>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../persistence/postgresql-flyway-migration.html">PostgreSQL Database Migration</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../persistence/integration-tests-with-postgresql.html">Integration Tests with PostgreSQL</a>
+  </li>
+</ul>
   </li>
 </ul>
   </li>
@@ -257,16 +278,16 @@
     <a class="nav-link" href="install-serverless-operator.html">Installation</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="developing-workflows.html">Developing Workflows</a>
+    <a class="nav-link" href="developing-workflows.html">Development Mode</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="configuring-workflows.html">Configuring Workflows</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="workflow-status-conditions.html">Workflows Status</a>
+    <a class="nav-link" href="configuring-workflows.html">Configuration</a>
   </li>
   <li class="nav-item is-current-page" data-depth="3">
-    <a class="nav-link" href="build-and-deploy-workflows.html">Building and Deploying Workflows</a>
+    <a class="nav-link" href="build-and-deploy-workflows.html">Building and Deploying Workflow Images</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="workflow-status-conditions.html">Custom Resource Status</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="known-issues.html">Known Issues</a>
@@ -278,16 +299,19 @@
     <span class="nav-text">Quarkus</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../quarkus/build-workflow-image-with-quarkus-cli.html">Building workflow images using Quarkus CLI</a>
+    <a class="nav-link" href="../quarkus/build-workflow-image-with-quarkus-cli.html">Building Workflow Images</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../quarkus/deploying-on-minikube.html">Deploying Workflows on Minikube</a>
+    <a class="nav-link" href="../quarkus/deploying-on-minikube.html">Deploying on Minikube</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../quarkus/deploying-on-kubernetes.html">Deploying Workflows on Kubernetes</a>
+    <a class="nav-link" href="../quarkus/deploying-on-kubernetes.html">Deploying on Kubernetes</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../quarkus/kubernetes-service-discovery.html">Kubernetes service discovery</a>
+    <a class="nav-link" href="../quarkus/deploying-on-openshift.html">Deploying on OpenShift</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../quarkus/kubernetes-service-discovery.html">Service Discovery</a>
   </li>
 </ul>
   </li>
@@ -298,25 +322,25 @@
     <span class="nav-text">Integrations</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../integrations/camel-routes-integration.html">Integrating with Camel Routes</a>
+    <a class="nav-link" href="../../integrations/camel-routes-integration.html">Camel Routes</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../integrations/custom-functions-knative.html">Invoking Knative services</a>
+    <a class="nav-link" href="../../integrations/custom-functions-knative.html">Knative Serving</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../integrations/expose-metrics-to-prometheus.html">Exposing workflow base metrics to Prometheus</a>
+    <a class="nav-link" href="../../integrations/expose-metrics-to-prometheus.html">Exposing Prometheus Metrics</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../integrations/serverless-dashboard-with-runtime-data.html">Displaying workflow data in dashboards</a>
+    <a class="nav-link" href="../../integrations/serverless-dashboard-with-runtime-data.html">Displaying workflow Data in Dashboards</a>
   </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <span class="nav-text">Supporting Services</span>
+    <span class="nav-text">Job Service</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../supporting-services/jobs-service.html">Job Service</a>
+    <a class="nav-link" href="../../job-services/core-concepts.html">Core Concepts</a>
   </li>
 </ul>
   </li>
@@ -325,10 +349,10 @@
     <span class="nav-text">Use Cases</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../use-cases/orchestration-based-saga-pattern.html">Saga Orchestration Example</a>
+    <a class="nav-link" href="../../use-cases/orchestration-based-saga-pattern.html">Saga Orchestration</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../use-cases/timeout-showcase-example.html">Timeout Example</a>
+    <a class="nav-link" href="../../use-cases/timeout-showcase-example.html">Timeout Demonstration</a>
   </li>
 </ul>
   </li>
@@ -350,7 +374,13 @@
           <a href="../../index.html">snapshot</a>
         </li>
         <li class="version is-latest">
-          <a href="../../../latest/index.html">1.39</a>
+          <a href="../../../latest/index.html">1.40</a>
+        </li>
+        <li class="version">
+          <a href="../../../1.40.0-SNAPSHOT/index.html">1.40-RC</a>
+        </li>
+        <li class="version">
+          <a href="../../../1.39.0.Final/index.html">1.39</a>
         </li>
         <li class="version">
           <a href="../../../1.38.0.Final/index.html">1.38</a>
@@ -413,14 +443,16 @@
     <li><a href="../../index.html">Kogito Serverless Workflow Guides</a></li>
     <li><a href="../index.html">Cloud</a></li>
     <li>Operator</li>
-    <li><a href="build-and-deploy-workflows.html">Building and Deploying Workflows</a></li>
+    <li><a href="build-and-deploy-workflows.html">Building and Deploying Workflow Images</a></li>
   </ul>
 </nav>
 <div class="page-versions">
   <button class="version-menu-toggle" title="Show other versions of page">snapshot</button>
   <div class="version-menu">
     <a class="version is-current" href="build-and-deploy-workflows.html">snapshot</a>
-    <a class="version" href="../../../latest/cloud/operator/build-and-deploy-workflows.html">1.39</a>
+    <a class="version" href="../../../latest/cloud/operator/build-and-deploy-workflows.html">1.40</a>
+    <a class="version" href="../../../1.40.0-SNAPSHOT/cloud/operator/build-and-deploy-workflows.html">1.40-RC</a>
+    <a class="version" href="../../../1.39.0.Final/cloud/operator/build-and-deploy-workflows.html">1.39</a>
     <a class="version" href="../../../1.38.0.Final/cloud/operator/build-and-deploy-workflows.html">1.38</a>
     <a class="version" href="../../../1.37.0.Final/cloud/operator/build-and-deploy-workflows.html">1.37</a>
     <a class="version is-missing" href="../../../1.36.1.Final/index.html">1.36</a>
@@ -449,7 +481,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>This document describes how to build and deploy your workflow on a Kubernetes cluster using the <a href="https://github.com/kiegroup/kogito-serverless-operator/">Kogito Serverless Workflow Operator</a> only by having a workflow definition.</p>
+<p>This document describes how to build and deploy your Workflow on a Kubernetes cluster using the <a href="https://github.com/kiegroup/kogito-serverless-operator/">Kogito Serverless Workflow Operator</a> only by having a Workflow definition.</p>
 </div>
 <div class="admonitionblock important">
 <table>
@@ -469,7 +501,7 @@
 <div class="title">Prerequisites</div>
 <ul>
 <li>
-<p>A workflow definition.</p>
+<p>A Workflow definition.</p>
 </li>
 <li>
 <p>The Kogito Serverless Workflow Operator installed. See <a href="install-serverless-operator.html" class="xref page">Install the Kogito Serverless Workflow Operator</a></p>
@@ -485,12 +517,12 @@
 <p>You should follow these steps to create a container that you can deploy as a service on Kubernetes.</p>
 </div>
 <div class="sect2">
-<h3 id="_create_a_namespace_for_the_building_phase"><a class="anchor" href="#_create_a_namespace_for_the_building_phase"></a>Create a namespace for the building phase</h3>
+<h3 id="_create_a_namespace_for_the_building_phase"><a class="anchor" href="#_create_a_namespace_for_the_building_phase"></a>Create a Namespace for the building phase</h3>
 <div class="paragraph">
-<p>Create a new namespace that will hold all the resources that the operator will create (pods, deployments, services, secretes, config map, and Custom Resources) in this guide.</p>
+<p>Create a new Namespace that will hold all the resources that the operator will create (Pods, Deployments, Services, Secrets, ConfigMap, and Custom Resources) in this guide.</p>
 </div>
 <div class="listingblock">
-<div class="title">Create a namespace for the application to build &amp; run in</div>
+<div class="title">Create a Namespace for the application to build and run in</div>
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">kubectl create namespace kogito-workflows
 # set the kogito-workflows namespace to your context
@@ -499,7 +531,7 @@ kubectl config set-context --current --namespace=kogito-workflows</code></pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_create_a_secret_for_the_container_registry_authentication"><a class="anchor" href="#_create_a_secret_for_the_container_registry_authentication"></a>Create a secret for the container registry authentication</h3>
+<h3 id="_create_a_secret_for_the_container_registry_authentication"><a class="anchor" href="#_create_a_secret_for_the_container_registry_authentication"></a>Create a Secret for the container registry authentication</h3>
 <div class="listingblock">
 <div class="title">Create a secret for the container registry authentication</div>
 <div class="content">
@@ -507,10 +539,10 @@ kubectl config set-context --current --namespace=kogito-workflows</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>or you can directly import your local docker config into your Kubernetes cluster:</p>
+<p>or you can directly import your local Docker config into your Kubernetes cluster:</p>
 </div>
 <div class="listingblock">
-<div class="title">Create a secret for the container registry authentication based on local docker config</div>
+<div class="title">Create a Secret for the container registry authentication based on local Docker config</div>
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">kubectl create secret generic regcred --from-file=.dockerconfigjson=${HOME}/.docker/config.json --type=kubernetes.io/dockerconfigjson -n kogito-workflows</code></pre>
 </div>
@@ -523,7 +555,7 @@ kubectl config set-context --current --namespace=kogito-workflows</code></pre>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Double check your <code>${HOME}/.docker/config.json</code>. If you&#8217;re using local desktop authentication, this configuration <strong>won&#8217;t work</strong> in the cluster. You can initialize this by logging in in the target registry, e.g. <code>docker login</code>.</p>
+<p>Double-check your <code>${HOME}/.docker/config.json</code>. If you&#8217;re using local desktop authentication, this configuration <strong>won&#8217;t work</strong> in the cluster. You can initialize this by logging in to the target registry, e.g. <code>docker login</code>.</p>
 </div>
 </td>
 </tr>
@@ -531,14 +563,14 @@ kubectl config set-context --current --namespace=kogito-workflows</code></pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_configure_the_kogito_serverless_workflow_operator_i_e_registry_address_secret_for_building_your_workflows"><a class="anchor" href="#_configure_the_kogito_serverless_workflow_operator_i_e_registry_address_secret_for_building_your_workflows"></a>Configure the Kogito Serverless Workflow Operator (i.e. registry address, secret) for building your workflows</h3>
+<h3 id="_configure_the_kogito_serverless_workflow_operator_i_e_registry_address_secret_for_building_your_workflows"><a class="anchor" href="#_configure_the_kogito_serverless_workflow_operator_i_e_registry_address_secret_for_building_your_workflows"></a>Configure the Kogito Serverless Workflow Operator (i.e. registry address, secret) for building your Workflows</h3>
 <div class="paragraph">
-<p>The <code>KogitoServerlessPlatform</code> is the resource used to control the behavior of the Kogito Serverless Workflow Operator.
-It defines the behavior of all Custom Resources (Workflow and Build) in the given namespace.</p>
+<p>The <code>KogitoServerlessPlatform</code> is the Custom Resource used to control the behavior of the Kogito Serverless Workflow Operator.
+It defines the behavior of the operator when handling all Kogito Serverless Workflow Custom Resources (Workflow and Build) in the given namespace.</p>
 </div>
 <div class="paragraph">
-<p>Since the operator is installed in global mode, you will need to specify a platform in each namespace where you want to deploy workflows.
-You can find a basic <code>KogitoServerlessPlatform</code> custom resource example in the <a href="https://github.com/kiegroup/kogito-serverless-operator/tree/main/config/samples"><code>config/samples</code> folder</a> that you can simply apply to configure your operator.</p>
+<p>Since the operator is installed in global mode, you will need to specify a <code>KogitoServerlessPlatform</code> in each Namespace where you want to deploy Workflows.
+You can find a basic <code>KogitoServerlessPlatform</code> Custom Resource example in the <a href="https://github.com/kiegroup/kogito-serverless-operator/tree/main/config/samples"><code>config/samples</code> folder</a> that you can simply apply to configure your operator.</p>
 </div>
 <div class="listingblock">
 <div class="title">Create a <code>KogitoServerlessPlatform</code></div>
@@ -554,7 +586,7 @@ You can find a basic <code>KogitoServerlessPlatform</code> custom resource examp
 </td>
 <td class="content">
 <div class="paragraph">
-<p>In this Custom Resource, <code>spec.platform.registry.secret</code> is the name of the secret you created just before.</p>
+<p>In this Custom Resource, <code>spec.platform.registry.secret</code> is the name of the Secret you created just before.</p>
 </div>
 </td>
 </tr>
@@ -582,10 +614,10 @@ You can find a basic <code>KogitoServerlessPlatform</code> custom resource examp
 </div>
 </div>
 <div class="sect1">
-<h2 id="_build_and_deploy_your_workflow_application"><a class="anchor" href="#_build_and_deploy_your_workflow_application"></a>Build and deploy your workflow application</h2>
+<h2 id="_build_and_deploy_your_workflow_application"><a class="anchor" href="#_build_and_deploy_your_workflow_application"></a>Build and deploy your Workflow application</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>You can now send your workflow definition (<code>KogitoServerlessWorkflow</code>) to the operator.</p>
+<p>You can now send your Workflow definition (<code>KogitoServerlessWorkflow</code>) to the operator.</p>
 </div>
 <div class="paragraph">
 <p>You can find a basic <code>KogitoServerlessWorkflow</code> in the <a href="https://github.com/kiegroup/kogito-serverless-operator/tree/main/config/samples"><code>config/samples</code> folder</a> that is defining the <a href="https://github.com/kiegroup/kogito-examples/tree/stable/serverless-workflow-examples/serverless-workflow-greeting-quarkus">Kogito Serverless Workflow Greeting example</a>.</p>
@@ -596,10 +628,10 @@ You can find a basic <code>KogitoServerlessPlatform</code> custom resource examp
 </div>
 </div>
 <div class="paragraph">
-<p>You can check the logs of the build of your workflow via:</p>
+<p>You can check the logs of the build of your Workflow via:</p>
 </div>
 <div class="listingblock">
-<div class="title">Get the workflow application pod logs</div>
+<div class="title">Get the Workflow application pod logs</div>
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">kubectl logs kogito-greeting-builder -n kogito-workflows</code></pre>
 </div>
@@ -610,10 +642,10 @@ You can find a basic <code>KogitoServerlessPlatform</code> custom resource examp
 </div>
 </div>
 <div class="sect1">
-<h2 id="_check_the_workflow_application_is_running"><a class="anchor" href="#_check_the_workflow_application_is_running"></a>Check the workflow application is running</h2>
+<h2 id="_check_the_workflow_application_is_running"><a class="anchor" href="#_check_the_workflow_application_is_running"></a>Check the Workflow application is running</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>In order to check that the Kogito Serverless Workflow Greeting application is up and running, you can try to perform a test HTTP call, from the greeting pod.</p>
+<p>In order to check that the Kogito Serverless Workflow Greeting application is up and running, you can try to perform a test HTTP call, from the greeting Pod.</p>
 </div>
 <div class="listingblock">
 <div class="title">Check the greeting application is running</div>
@@ -624,7 +656,7 @@ curl -X POST -H 'Content-Type:application/json' -H 'Accept:application/json' -d 
 </div>
 </div>
 <div class="paragraph">
-<p>If everything is working well you should receive a response like this:</p>
+<p>If everything is working, you should receive a response like this:</p>
 </div>
 <div class="listingblock">
 <div class="title">Response from the greeting application</div>
